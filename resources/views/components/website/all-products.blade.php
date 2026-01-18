@@ -1,0 +1,1 @@
+@include('website.component.products', ['products' => $products])
