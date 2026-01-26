@@ -134,7 +134,7 @@
             
             <div class="profile-header">
                 <div class="profile-img-container">
-                    <img src="https://via.placeholder.com/150/253D4E/FFFFFF?text=User" class="profile-img" alt="Profile">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQud01jQUo5wke7fLnpzaAq2XM7autrL_TBBQ&s" class="profile-img" alt="Profile">
                 </div>
             </div>
 

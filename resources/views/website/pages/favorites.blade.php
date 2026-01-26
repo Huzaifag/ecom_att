@@ -190,7 +190,7 @@
             <div class="row align-items-center">
                 <div class="col-md-2 col-12">
                     <div class="product-img-wrapper">
-                        <img src="https://via.placeholder.com/150/253D4E/FFFFFF?text=Polo" class="product-img" alt="Product">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsPYEQnBraLTmMztgK274iWKcbiocMzDf9Zg&s" class="product-img" alt="Product">
                     </div>
                 </div>
                 
@@ -232,7 +232,7 @@
             <div class="row align-items-center">
                 <div class="col-md-2 col-12">
                     <div class="product-img-wrapper">
-                        <img src="https://via.placeholder.com/150/3BB77E/FFFFFF?text=Polo" class="product-img" alt="Product">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsPYEQnBraLTmMztgK274iWKcbiocMzDf9Zg&s" class="product-img" alt="Product">
                     </div>
                 </div>
                 <div class="col-md-6 col-12">
@@ -269,7 +269,7 @@
             <div class="row align-items-center">
                 <div class="col-md-2 col-12">
                     <div class="product-img-wrapper">
-                        <img src="https://via.placeholder.com/150/FDC040/FFFFFF?text=Polo" class="product-img" alt="Product">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsPYEQnBraLTmMztgK274iWKcbiocMzDf9Zg&s" class="product-img" alt="Product">
                     </div>
                 </div>
                 <div class="col-md-6 col-12">

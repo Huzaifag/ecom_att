@@ -72,6 +72,10 @@ Route::get('/business-with-us', function () {
     return view('website.pages.business_with_us');
 });
 
+Route::get('/track-order', function () {
+    return view('website.pages.track_order');
+});
+
 
 Route::get('/favorites', function () {
     return view('website.pages.favorites');
