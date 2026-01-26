@@ -117,6 +117,10 @@ Route::get('/sitemap', function () {
     return view('website.pages.sitemap');
 });
 
+Route::get('/how-to-order', function () {
+    return view('website.pages.how_to_order');
+});
+
 
 // User Authentication Routes
 Route::middleware('guest')->group(function () {

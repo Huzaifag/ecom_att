@@ -112,7 +112,7 @@
     <div class="row justify-content-center">
         <div class="col-12">
             <div class="video-card aspect-video-main shadow-sm">
-                <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?q=80&w=2070&auto=format&fit=crop" 
+                <img src="{{ asset('images/website/video-banner.png') }}" 
                      alt="How To Order Main Video" class="img-fluid w-100 h-100">
                 
                 <div class="play-button"></div>
@@ -134,7 +134,7 @@
         @for($i = 0; $i < 6; $i++)
         <div class="col-md-4 col-sm-6">
             <div class="video-card small-video aspect-video-small shadow-sm">
-                <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?q=80&w=800&auto=format&fit=crop" 
+                <img src="{{ asset('images/website/video-banner.png') }}" 
                      alt="Video Thumbnail" class="img-fluid w-100 h-100">
                 <div class="play-button"></div>
             </div>
