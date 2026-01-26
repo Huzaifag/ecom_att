@@ -53,7 +53,7 @@
                             class="text-white text-decoration-none opacity-75 hover-opacity-100">About Us</a></li>
                     <li class="mb-2"><a href="#"
                             class="text-white text-decoration-none opacity-75 hover-opacity-100">Our Sitemap</a></li>
-                    <li class="mb-2"><a href="#"
+                    <li class="mb-2"><a href="{{ url('/store-location') }}"
                             class="text-white text-decoration-none opacity-75 hover-opacity-100">Store Location</a></li>
                 </ul>
             </div>

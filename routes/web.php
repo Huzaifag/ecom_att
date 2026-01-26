@@ -105,6 +105,10 @@ Route::get('/apply-now', function () {
 });
 
 
+Route::get('/store-location', function () {
+    return view('website.pages.store_location');
+});
+
 
 // User Authentication Routes
 Route::middleware('guest')->group(function () {
