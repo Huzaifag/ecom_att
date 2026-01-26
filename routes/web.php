@@ -73,6 +73,11 @@ Route::get('/business-with-us', function () {
 });
 
 
+Route::get('/track-order', function () {
+    return view('website.pages.track_order');
+});
+
+
 // User Authentication Routes
 Route::middleware('guest')->group(function () {
     Route::get('/login/{role}', function ($role) {
