@@ -96,6 +96,11 @@ Route::get('/our-team', function () {
 
 
 
+Route::get('/carear', function () {
+    return view('website.pages.carear');
+});
+
+
 
 // User Authentication Routes
 Route::middleware('guest')->group(function () {
