@@ -109,6 +109,10 @@ Route::get('/store-location', function () {
     return view('website.pages.store_location');
 });
 
+Route::get('/faqs', function () {
+    return view('website.pages.faqs');
+});
+
 
 // User Authentication Routes
 Route::middleware('guest')->group(function () {
