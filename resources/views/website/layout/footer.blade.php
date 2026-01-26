@@ -1,4 +1,3 @@
-
 <footer class="text-white py-5" style="background-color: #1E1E1E">
     <div class="container">
         <!-- Top Section: Features -->
@@ -65,17 +64,17 @@
                 <ul class="list-unstyled small opacity-75">
                     <li class="mb-2"><a href="#"
                             class="text-white text-decoration-none opacity-75 hover-opacity-100">How to Order</a></li>
-                    <li class="mb-2"><a href="#"
+                    <li class="mb-2"><a href="{{ url('/buying-policy') }}"
                             class="text-white text-decoration-none opacity-75 hover-opacity-100">Buying Policy</a></li>
-                    <li class="mb-2"><a href="#"
+                    <li class="mb-2"><a href="{{ url('/security-policy') }}"
                             class="text-white text-decoration-none opacity-75 hover-opacity-100">Security Policy</a>
                     </li>
-                    <li class="mb-2"><a href="#"
+                    <li class="mb-2"><a href="{{ url('/privacy-policy') }}"
                             class="text-white text-decoration-none opacity-75 hover-opacity-100">Privacy Policy</a></li>
-                    <li class="mb-2"><a href="#"
+                    <li class="mb-2"><a href="{{ url('/terms-and-conditions') }}"
                             class="text-white text-decoration-none opacity-75 hover-opacity-100">Terms & Condition</a>
                     </li>
-                    <li class="mb-2"><a href="#"
+                    <li class="mb-2"><a href="{{ url('/return-and-refund-policy') }}"
                             class="text-white text-decoration-none opacity-75 hover-opacity-100">Refund & Return
                             Policy</a></li>
                 </ul>
@@ -85,9 +84,9 @@
             <div class="col-lg-2 col-md-6 mb-4">
                 <h5 class="fw-bold mb-3">Useful Links</h5>
                 <ul class="list-unstyled small opacity-75">
-                    <li class="mb-2"><a href="#"
+                    <li class="mb-2"><a href="{{ url('/bulk-order') }}"
                             class="text-white text-decoration-none opacity-75 hover-opacity-100">Bulk Order</a></li>
-                    <li class="mb-2"><a href="#"
+                    <li class="mb-2"><a href="{{ url('/business-with-us') }}"
                             class="text-white text-decoration-none opacity-75 hover-opacity-100">Business with Us</a>
                     </li>
                     <li class="mb-2"><a href="#"
@@ -121,8 +120,8 @@
                 <div>
                     <p class="small fw-bold mb-2">Secured Payments Gateways</p>
                     <div class="d-flex flex-wrap gap-3 align-items-center">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Visa_Inc._logo.svg"
-                            alt="Visa" height="25">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Visa_Inc._logo.svg" alt="Visa"
+                            height="25">
                         <img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Mastercard-logo.svg"
                             alt="Mastercard" height="30">
                         <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/PayPal.svg" alt="PayPal"
@@ -155,6 +154,7 @@
             background-color: #1E1E1E;
             color: #ffffff;
         }
+
         footer a:hover {
             opacity: 1 !important;
         }

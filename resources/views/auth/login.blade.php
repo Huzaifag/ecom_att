@@ -1,154 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>SOFTSTYLE - Sign In</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In - Softstyle</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    
+    <style>
+        /* Custom CSS to match the exact design colors and styles */
+        :root {
+            --brand-teal: #0F6973; /* The specific teal color from the image */
+            --brand-teal-light: #E7F3F4; /* The light background for the selected button */
+            --brand-gray-bg: #F8F9FA; /* The gray background for unselected buttons */
+            --brand-text-gray: #6c757d;
+        }
 
-  <!-- Bootstrap 5.3 CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" 
-        rel="stylesheet" 
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" 
-        crossorigin="anonymous">
+        body {
+            background-color: #ffffff;
+            font-family: 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+        }
 
-  <style>
-    body {
-      background-color: #f5f6fa;
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
-    }
+        /* Centering container */
+        .main-container {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
 
-    .login-card {
-      background: white;
-      border-radius: 16px;
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-      overflow: hidden;
-      max-width: 420px;
-      width: 100%;
-    }
+        /* Custom Card Styling */
+        .signin-card {
+            background-color: #fff;
+            border: none;
+            border-radius: 30px; /* Highly rounded corners */
+            box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.05); /* Subtle, soft shadow */
+            max-width: 480px;
+            width: 100%;
+            padding: 3rem;
+        }
 
-    .header {
-      background: linear-gradient(135deg, #0d6efd 0%, #0b5ed7 100%);
-      color: white;
-      padding: 2.5rem 1.5rem;
-      text-align: center;
-    }
+        .logo-img {
+            max-height: 60px;
+            width: auto;
+        }
 
-    .logo {
-      font-weight: 700;
-      font-size: 1.75rem;
-      margin-bottom: 0.5rem;
-      letter-spacing: -0.5px;
-    }
+        h2.signin-heading {
+            font-weight: 700;
+            color: #212529;
+            font-size: 2rem;
+        }
 
-    .subtitle {
-      font-size: 1rem;
-      opacity: 0.9;
-      margin: 0;
-    }
+        p.signin-text {
+            color: var(--brand-text-gray);
+            font-size: 1rem;
+            line-height: 1.5;
+        }
 
-    .content {
-      padding: 2.5rem 2rem;
-    }
+        /* Role Selection Button Styles */
+        .btn-role {
+            font-weight: 600;
+            font-size: 1.1rem;
+            padding: 1rem 1.5rem;
+            border-radius: 15px; /* Soft rounded buttons */
+            border: 2px solid transparent;
+            transition: all 0.3s ease;
+            color: var(--brand-text-gray);
+            background-color: var(--brand-gray-bg);
+        }
 
-    .role-btn {
-      height: 70px;
-      font-size: 1.1rem;
-      font-weight: 500;
-      border-radius: 12px;
-      margin-bottom: 1rem;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 12px;
-      transition: all 0.2s;
-    }
+        /* Style for the icon inside buttons */
+        .btn-role i {
+            font-size: 1.4rem;
+            margin-right: 12px;
+        }
 
-    .role-btn:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
-    }
+        /* The 'Active' state (matches the "Admin" button in the image) */
+        .btn-role.active {
+            color: var(--brand-teal);
+            background-color: var(--brand-teal-light);
+            border-color: var(--brand-teal);
+        }
 
-    .role-btn.user {
-      background-color: #0d6efd;
-      border-color: #0d6efd;
-      color: white;
-    }
+        /* Hover effect for unselected buttons */
+        .btn-role:not(.active):hover {
+            background-color: #e9ecef;
+            color: #495057;
+        }
 
-    .role-btn.user:hover {
-      background-color: #0b5ed7;
-      border-color: #0a58ca;
-    }
+        /* Next Button Styles */
+        .btn-next {
+            background-color: var(--brand-teal);
+            border: none;
+            color: white;
+            font-weight: 600;
+            font-size: 1.1rem;
+            padding: 1rem;
+            border-radius: 15px;
+            transition: background-color 0.3s ease;
+        }
 
-    .role-btn.admin {
-      background-color: #6610f2;
-      border-color: #6610f2;
-      color: white;
-    }
-
-    .role-btn.admin:hover {
-      background-color: #5a0ddb;
-      border-color: #520dc2;
-    }
-
-    .next-btn {
-      padding: 0.9rem 1.5rem;
-      font-size: 1.1rem;
-      font-weight: 600;
-      border-radius: 12px;
-      width: 100%;
-      margin-top: 1.5rem;
-    }
-  </style>
+        .btn-next:hover {
+            background-color: #0a4d55; /* Slightly darker teal on hover */
+            color: white;
+        }
+    </style>
 </head>
 <body>
 
-<div class="login-card">
+    <div class="main-container">
+        <div class="card signin-card text-center">
+            <div class="card-body p-0">
+                <div class="mb-4">
+                    <img src="{{ asset('images/website/logo-2.png') }}" alt="Admin Logo" style="width: 100%; height: 40px;">
+                </div>
 
-  <!-- Header -->
-  <div class="header">
-    <div class="logo">SOFTSTYLE</div>
-    <p class="subtitle">Sign In</p>
-  </div>
+                <h2 class="signin-heading mb-3">Sign In</h2>
+                <p class="signin-text mb-5 px-3">
+                    Select your role to get started and access the features to your needs.
+                </p>
 
-  <!-- Content -->
-  <div class="content">
+                <div class="d-grid gap-3 mb-5">
+                    <button class="btn btn-role active d-flex align-items-center justify-content-center" type="button" data-role="admin">
+                        <i class="bi bi-person"></i>
+                        Admin
+                    </button>
+                    
+                    <button class="btn btn-role d-flex align-items-center justify-content-center" type="button" data-role="user">
+                        <i class="bi bi-person"></i>
+                        User
+                    </button>
+                </div>
 
-    <h5 class="text-center mb-4 fw-semibold">Select your role</h5>
+                <div class="d-grid">
+                    <button class="btn btn-next" type="button" id="role-submit">Next</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     
-    <p class="text-center text-muted mb-4">
-      Select your role to get started and access the features you need.
-    </p>
+    <script>
+        const roleButtons = document.querySelectorAll('.btn-role');
+        let selectedRole = 'admin';
 
-    <button type="button" class="btn btn-outline-secondary role-btn admin w-100">
-      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16">
-        <path d="M8 1a2 2 0 0 1 2 2v2H6V3a2 2 0 0 1 2-2zm3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2z"/>
-      </svg>
-      Admin
-    </button>
+        roleButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                roleButtons.forEach(btn => btn.classList.remove('active'));
+                this.classList.add('active');
+                selectedRole = this.dataset.role;
+            });
+        });
 
-    <button type="button" class="btn btn-outline-primary role-btn user w-100">
-      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16">
-        <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"/>
-      </svg>
-      User
-    </button>
-
-    <button type="button" class="btn btn-primary next-btn">
-      Next
-    </button>
-
-  </div>
-
-</div>
-
-<!-- Bootstrap JS (optional - only if you need dropdowns, modals, etc.) -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" 
-        crossorigin="anonymous"></script>
-
+        document.getElementById('role-submit').addEventListener('click', function() {
+            window.location.href = `/login/${selectedRole}`;
+        });
+    </script>
 </body>
 </html>

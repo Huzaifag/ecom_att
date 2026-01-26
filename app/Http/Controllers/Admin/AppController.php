@@ -8,7 +8,7 @@ use Illuminate\Http\Request;
 class AppController extends Controller
 {
     /**
-     * Display the admin app layout page.
+     * Display the admin dashboard.
      *
      * @return \Illuminate\View\View
      */

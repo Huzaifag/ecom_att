@@ -3,10 +3,9 @@
 
     <!-- Sidebar - Brand -->
     <a class="sidebar-brand d-flex align-items-center justify-content-center" href="#">
-        <div class="sidebar-brand-icon rotate-n-15">
-            <i class="fas fa-laugh-wink"></i>
-        </div>
-        <div class="sidebar-brand-text mx-3">Admin<sup>Pro</sup></div>
+        <div class="sidebar-brand-icon rotate-n-15 p-4">
+            <img src="{{ asset('images/website/logo-2.png') }}" alt="Admin Logo" style="width: 100%; height: 40px;">
+            </div>
     </a>
 
     <!-- Divider -->
@@ -16,8 +15,8 @@
         Overview
     </div>
     <!-- Nav Item - Dashboard -->
-    <li class="nav-item active">
-        <a class="nav-link" href="#">
+    <li class="nav-item {{ request()->routeIs('admin.dashboard') ? 'active' : '' }}">
+        <a class="nav-link" href="{{ route('admin.dashboard') }}">
             <i class="bi bi-command"></i>
             <span>Dashboard</span>
         </a>
@@ -49,17 +48,17 @@
     </li>
 
     <!-- Nav Item - Utilities -->
-    <li class="nav-item">
-        <a class="nav-link collapsed" href="#">
+    <li class="nav-item {{ request()->routeIs('admin.products.*') ? 'active' : '' }}">
+        <a class="nav-link {{ request()->routeIs('admin.products.*') ? '' : 'collapsed' }} {{ request()->routeIs('admin.products.*') ? 'active' : '' }}" href="{{ route('admin.products.create') }}">
             <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M2.6416 6.2002L9.99992 10.4585L17.3082 6.22517" stroke="#2D2D2D" stroke-width="1.5"
+                <path d="M2.6416 6.2002L9.99992 10.4585L17.3082 6.22517" stroke="{{ request()->routeIs('admin.products.*') ? '#ffff' : '#2D2D2D' }}" stroke-width="1.5"
                     stroke-linecap="round" stroke-linejoin="round" />
-                <path d="M10 18.0085V10.4502" stroke="#2D2D2D" stroke-width="1.5" stroke-linecap="round"
+                <path d="M10 18.0085V10.4502" stroke="{{ request()->routeIs('admin.products.*') ? '#ffff' : '#2D2D2D' }}" stroke-width="1.5" stroke-linecap="round"
                     stroke-linejoin="round" />
                 <path
                     d="M8.2755 2.06602L3.82551 4.54104C2.81717 5.09938 1.99219 6.49936 1.99219 7.64936V12.3577C1.99219 13.5077 2.81717 14.9077 3.82551 15.466L8.2755 17.9411C9.2255 18.4661 10.7838 18.4661 11.7338 17.9411L16.1839 15.466C17.1922 14.9077 18.0172 13.5077 18.0172 12.3577V7.64936C18.0172 6.49936 17.1922 5.09938 16.1839 4.54104L11.7338 2.06602C10.7755 1.53268 9.2255 1.53268 8.2755 2.06602Z"
-                    stroke="#2D2D2D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                <path d="M14.1663 11.0337V7.98369L6.25793 3.41699" stroke="#2D2D2D" stroke-width="1.5"
+                    stroke="{{ request()->routeIs('admin.products.*') ? '#ffff' : '#2D2D2D' }}" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M14.1663 11.0337V7.98369L6.25793 3.41699" stroke="{{ request()->routeIs('admin.products.*') ? '#ffff' : '#2D2D2D' }}" stroke-width="1.5"
                     stroke-linecap="round" stroke-linejoin="round" />
             </svg>
 
