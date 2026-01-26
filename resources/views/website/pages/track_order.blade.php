@@ -349,7 +349,7 @@
         <div class="row">
             <div class="col-md-8">
                 <div class="product-card">
-                    <img src="https://via.placeholder.com/150/20B2AA/FFFFFF?text=T-Shirt" class="product-img" alt="Product">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsPYEQnBraLTmMztgK274iWKcbiocMzDf9Zg&s" class="product-img" alt="Product">
                     <div class="flex-grow-1">
                         <h6 class="fw-bold mb-1">Men's Premium Blank T-shirt-green | Organic Ring spun</h6>
                         <p class="mb-1 text-muted small">Combed Compact Cotton | 100% Cotton Basic T-Shirt Combo Pack</p>
@@ -359,7 +359,7 @@
                 </div>
 
                 <div class="product-card">
-                     <img src="https://via.placeholder.com/150/333333/FFFFFF?text=T-Shirt" class="product-img" alt="Product">
+                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsPYEQnBraLTmMztgK274iWKcbiocMzDf9Zg&s" class="product-img" alt="Product">
                     <div class="flex-grow-1">
                         <h6 class="fw-bold mb-1">Men's Premium Blank T-shirt-green | Organic Ring spun</h6>
                         <p class="mb-1 text-muted small">Combed Compact Cotton | 100% Cotton Basic T-Shirt Combo Pack</p>

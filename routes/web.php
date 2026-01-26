@@ -76,6 +76,10 @@ Route::get('/track-order', function () {
     return view('website.pages.track_order');
 });
 
+Route::get('/share-idea', function () {
+    return view('website.pages.share_idea');
+});
+
 
 Route::get('/favorites', function () {
     return view('website.pages.favorites');
