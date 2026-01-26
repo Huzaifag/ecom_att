@@ -113,6 +113,10 @@ Route::get('/faqs', function () {
     return view('website.pages.faqs');
 });
 
+Route::get('/sitemap', function () {
+    return view('website.pages.sitemap');
+});
+
 
 // User Authentication Routes
 Route::middleware('guest')->group(function () {

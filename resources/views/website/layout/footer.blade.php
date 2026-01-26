@@ -47,11 +47,11 @@
                             class="text-white text-decoration-none opacity-75 hover-opacity-100">FAQs</a></li>
                     <li class="mb-2"><a href="#"
                             class="text-white text-decoration-none opacity-75 hover-opacity-100">Portfolio</a></li>
-                    <li class="mb-2"><a href="#"
+                    <li class="mb-2"><a href="{{ url('/contact') }}"
                             class="text-white text-decoration-none opacity-75 hover-opacity-100">Contact Us</a></li>
-                    <li class="mb-2"><a href="#"
+                    <li class="mb-2"><a href="{{ url('/about') }}"
                             class="text-white text-decoration-none opacity-75 hover-opacity-100">About Us</a></li>
-                    <li class="mb-2"><a href="#"
+                    <li class="mb-2"><a href="{{ url('/sitemap') }}"
                             class="text-white text-decoration-none opacity-75 hover-opacity-100">Our Sitemap</a></li>
                     <li class="mb-2"><a href="{{ url('/store-location') }}"
                             class="text-white text-decoration-none opacity-75 hover-opacity-100">Store Location</a></li>
@@ -62,7 +62,7 @@
             <div class="col-lg-2 col-md-6 mb-4">
                 <h5 class="fw-bold mb-3">Our Policy</h5>
                 <ul class="list-unstyled small opacity-75">
-                    <li class="mb-2"><a href="#"
+                    <li class="mb-2"><a href="{{ url('/how-to-order') }}"
                             class="text-white text-decoration-none opacity-75 hover-opacity-100">How to Order</a></li>
                     <li class="mb-2"><a href="{{ url('/buying-policy') }}"
                             class="text-white text-decoration-none opacity-75 hover-opacity-100">Buying Policy</a></li>
