@@ -130,16 +130,18 @@
                         Us</a>
                 </li>
                 <li class="py-3 border-bottom d-flex align-items-center gap-3">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                        class="icon icon-tabler icons-tabler-outline icon-tabler-truck">
-                        <!-- paths same as above -->
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                        <path d="M5 17a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
-                        <path d="M15 17a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
-                        <path d="M5 17h-2v-11a1 1 0 0 1 1 -1h9v12m-4 0h6m4 0h2v-6h-8m0 -5h5l3 5" />
-                    </svg>
-                    <span class="heading-v2">Order Tracking</span>
+                    <a href="{{ url('/track-order') }}" class="d-flex align-items-center gap-3 text-decoration-none text-dark">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="icon icon-tabler icons-tabler-outline icon-tabler-truck">
+                            <!-- paths same as above -->
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M5 17a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
+                            <path d="M15 17a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
+                            <path d="M5 17h-2v-11a1 1 0 0 1 1 -1h9v12m-4 0h6m4 0h2v-6h-8m0 -5h5l3 5" />
+                        </svg>
+                        <span class="heading-v2">Order Tracking</span>
+                    </a>
                 </li>
                 <li class="py-3 d-flex align-items-center gap-3">
                     <img src="{{ asset('/images/website/flag.png') }}" width="24" alt="Flag">
