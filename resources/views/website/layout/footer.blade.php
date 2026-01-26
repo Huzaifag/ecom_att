@@ -94,7 +94,7 @@
                     <li class="mb-2"><a href="{{ url('/share-idea') }}"
                             class="text-white text-decoration-none opacity-75 hover-opacity-100">Share Your Idea</a>
                     </li>
-                    <li class="mb-2"><a href="#"
+                    <li class="mb-2"><a href="{{ url('/our-team') }}"
                             class="text-white text-decoration-none opacity-75 hover-opacity-100">Our Team</a></li>
                     <li class="mb-2"><a href="#"
                             class="text-white text-decoration-none opacity-75 hover-opacity-100">Career</a></li>
