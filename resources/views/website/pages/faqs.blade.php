@@ -86,7 +86,7 @@
     <h2 class="faq-header">Frequently Asked Questions</h2>
 
     {{-- Banner Image --}}
-    <img src="https://images.unsplash.com/photo-1544654290-7d92822a0887?auto=format&fit=crop&q=80&w=1000" 
+    <img src="{{ asset('/images/website/faqs.jpg') }}" 
          alt="FAQ Banner" 
          class="img-fluid faq-banner shadow-sm">
 
