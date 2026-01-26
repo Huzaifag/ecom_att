@@ -96,7 +96,7 @@
                     </li>
                     <li class="mb-2"><a href="{{ url('/our-team') }}"
                             class="text-white text-decoration-none opacity-75 hover-opacity-100">Our Team</a></li>
-                    <li class="mb-2"><a href="#"
+                    <li class="mb-2"><a href="{{ url('/careers') }}"
                             class="text-white text-decoration-none opacity-75 hover-opacity-100">Career</a></li>
                 </ul>
             </div>
