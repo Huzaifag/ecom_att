@@ -85,10 +85,10 @@
             <a href="/cart" class="position-relative">
                 <i class="bi bi-cart3 fs-4"></i>
             </a>
-            <a href="/favorites.html">
+            <a href="{{ url('/favorites') }}" class="position-relative">
                 <i class="bi bi-heart fs-4"></i>
             </a>
-            <a href="/profile.html">
+            <a href="{{ url('/profile') }}">
                 <i class="ti ti-user fs-4"></i>
             </a>
         </div>

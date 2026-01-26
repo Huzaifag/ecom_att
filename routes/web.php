@@ -73,9 +73,16 @@ Route::get('/business-with-us', function () {
 });
 
 
-Route::get('/track-order', function () {
-    return view('website.pages.track_order');
+Route::get('/favorites', function () {
+    return view('website.pages.favorites');
 });
+
+
+Route::get('/profile', function () {
+    return view('website.pages.profile');
+});
+
+
 
 
 // User Authentication Routes
