@@ -100,6 +100,10 @@ Route::get('/careers', function () {
     return view('website.pages.careers');
 });
 
+Route::get('/apply-now', function () {
+    return view('website.pages.apply_now');
+});
+
 
 
 // User Authentication Routes

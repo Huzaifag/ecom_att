@@ -161,7 +161,7 @@
                         <span><i class="fas fa-calendar-alt"></i> 21 June 2029</span>
                     </div>
                     <p class="job-desc">Are you a Data Analytics specialist? Do you have Data Warehousing and/or Hadoop/Data Lake experience? Do you like to solve the most complex and high scale (billions + records) data challenges in the world today?</p>
-                    <button class="btn btn-apply">Apply Now</button>
+                    <a class="btn btn-apply">Apply Now</a>
                 </div>
             </div>
             @endfor
