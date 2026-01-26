@@ -45,7 +45,7 @@
             <div class="col-4 d-flex justify-content-end align-items-center gap-4">
                 <div class="order-tracking d-flex align-items-center gap-2 px-3">
                     <a href="{{ url('/track-order') }}"
-                        class="d-flex align-items-center gap-3 text-decoration-none text-dark">
+                        class="d-flex align-items-center gap-3 text-decoration-none text-danger">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                             class="icon icon-tabler icons-tabler-outline icon-tabler-truck">
@@ -134,7 +134,7 @@
                 </li>
                 <li class="py-3 border-bottom d-flex align-items-center gap-3">
                     <a href="{{ url('/track-order') }}"
-                        class="d-flex align-items-center gap-3 text-decoration-none text-dark">
+                        class="d-flex align-items-center gap-3 text-decoration-none text-danger">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                             class="icon icon-tabler icons-tabler-outline icon-tabler-truck">
