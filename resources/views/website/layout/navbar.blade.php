@@ -12,7 +12,7 @@
         </div>
         <div class="user-actions d-flex gap-4">
             <a href="/cart"><i class="bi bi-cart3 fs-4"></i></a>
-            <a href="/favorites.html"><i class="bi bi-heart fs-4"></i></a>
+            <a href="{{ url('/favorites') }}"><i class="bi bi-heart fs-4"></i></a>
             <a href="/profile.html"><i class="ti ti-user fs-4"></i></a>
         </div>
     </nav>
