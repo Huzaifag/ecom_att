@@ -90,6 +90,10 @@ Route::get('/profile', function () {
     return view('website.pages.profile');
 });
 
+Route::get('/our-team', function () {
+    return view('website.pages.our_team');
+});
+
 
 
 
