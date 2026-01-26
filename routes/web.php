@@ -96,8 +96,8 @@ Route::get('/our-team', function () {
 
 
 
-Route::get('/carear', function () {
-    return view('website.pages.carear');
+Route::get('/careers', function () {
+    return view('website.pages.careers');
 });
 
 
