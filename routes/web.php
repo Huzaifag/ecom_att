@@ -154,6 +154,8 @@ Route::prefix('admin')->group(function () {
 
         Route::get('/orders/create', [\App\Http\Controllers\Admin\OrdersController::class, 'create'])->name('admin.orders.create');
 
+        Route::get('/orders/', [\App\Http\Controllers\Admin\OrdersController::class, 'create'])->name('admin.orders.create');
+
     });
 });
 

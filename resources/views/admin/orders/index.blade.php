@@ -11,7 +11,7 @@
             <h4 class="mb-0">Orders Overview</h4>
             <div class="d-flex gap-2">
                 <button class="btn btn-outline-secondary">Add / Cancel Entry</button>
-                <button class="btn btn-primary">+ Create</button>
+                <a href="{{ route('admin.orders.create') }}" class="btn btn-primary">+ Create</a>
             </div>
         </div>
 
