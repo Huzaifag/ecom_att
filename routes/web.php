@@ -148,6 +148,9 @@ Route::prefix('admin')->group(function () {
         Route::get('/dashboard', [\App\Http\Controllers\Admin\AppController::class, 'index'])->name('admin.dashboard');
         Route::get('/products', [\App\Http\Controllers\Admin\ProductController::class, 'index'])->name('admin.products.index');
         Route::get('/products/create', [\App\Http\Controllers\Admin\ProductController::class, 'create'])->name('admin.products.create');
+
+        //Orders route
+        Route::get('/orders', [\App\Http\Controllers\Admin\OrdersController::class, 'index'])->name('admin.orders.index');
     });
 });
 

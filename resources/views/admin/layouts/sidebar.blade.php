@@ -32,7 +32,7 @@
 
     <!-- Nav Item - Pages -->
     <li class="nav-item">
-        <a class="nav-link collapsed" href="#">
+        <a class="nav-link collapsed" href="{{ route('admin.orders.index') }}">
             <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M2.50952 5.88965L9.49994 9.93506L16.4429 5.9134" stroke="#2D2D2D" stroke-width="1.5"
                     stroke-linecap="round" stroke-linejoin="round" />
