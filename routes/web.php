@@ -151,6 +151,8 @@ Route::prefix('admin')->group(function () {
 
         //Orders route
         Route::get('/orders', [\App\Http\Controllers\Admin\OrdersController::class, 'index'])->name('admin.orders.index');
+
+        
     });
 });
 
