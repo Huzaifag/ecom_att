@@ -152,7 +152,8 @@ Route::prefix('admin')->group(function () {
         //Orders route
         Route::get('/orders', [\App\Http\Controllers\Admin\OrdersController::class, 'index'])->name('admin.orders.index');
 
-        
+        Route::get('/orders/create', [\App\Http\Controllers\Admin\OrdersController::class, 'create'])->name('admin.orders.create');
+
     });
 });
 
