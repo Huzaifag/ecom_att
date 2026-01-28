@@ -49,7 +49,7 @@
 
     <!-- Nav Item - Utilities -->
     <li class="nav-item {{ request()->routeIs('admin.products.*') ? 'active' : '' }}">
-        <a class="nav-link {{ request()->routeIs('admin.products.*') ? '' : 'collapsed' }} {{ request()->routeIs('admin.products.*') ? 'active' : '' }}" href="{{ route('admin.products.create') }}">
+        <a class="nav-link {{ request()->routeIs('admin.products.*') ? '' : 'collapsed' }} {{ request()->routeIs('admin.products.*') ? 'active' : '' }}" href="{{ route('admin.products.index') }}">
             <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M2.6416 6.2002L9.99992 10.4585L17.3082 6.22517" stroke="{{ request()->routeIs('admin.products.*') ? '#ffff' : '#2D2D2D' }}" stroke-width="1.5"
                     stroke-linecap="round" stroke-linejoin="round" />
